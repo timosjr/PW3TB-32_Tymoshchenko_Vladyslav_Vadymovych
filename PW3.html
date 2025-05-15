@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Веб калькулятор</title>
+    <script src="PW3.js"></script>
+    <link rel="stylesheet" href="PW3_style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Калькулятор прибутку сонячної електростанції</h2>
+        <label for="pc">Середньодобова потужність (МВт):</label>
+        <input type="number" id="pc">
+
+        <label for="sigma1">Середньоквадратичне відхилення σ1 (МВт):</label>
+        <input type="number" id="sigma1">
+
+        <label for="sigma2">Середньоквадратичне відхилення σ2 (МВт):</label>
+        <input type="number" id="sigma2">
+
+        <label for="v">Вартість електроенергії (грн/кВт·год):</label>
+        <input type="number" id="v">
+
+        <button onclick="calculateProfit()">Розрахувати прибуток</button>
+
+        <h3>Результати:</h3>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
